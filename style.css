@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Andale Mono';
+  src: url('./fonts/AndaleMono.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('./fonts/NotoSansJP-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+body::before {
+  content: ' ';
+  font-family: 'Andale Mono', 'Noto Sans JP', monospace;
+  font-size: 0;
+  visibility: hidden;
+}
+
+body {
+  font-family: 'Andale Mono', 'Noto Sans JP', monospace;
+}
+
+canvas {
+  font-family: 'Andale Mono', 'Noto Sans JP', monospace;
+}
+
+#webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#canvas2d {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#finalCanvas {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: -1;
+}
